@@ -23,6 +23,11 @@
     res.json({msg: 'ok'});
  });
 
+ app.get("/gate", function(req, res) {
+    console.log(new Date(), 'front end requested');
+    res.sendFile('./gate.html' , { root : __dirname});
+ });
+
 
  /* serves all the static files */
  app.get(/^(.+)$/, function(req, res){ 
