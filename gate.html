@@ -100,7 +100,7 @@ body {
 <script type="text/javascript">
 // Credit: Mateusz Rybczonec
 
-const TIME_LIMIT = 35;
+const TIME_LIMIT = 30;
 const FULL_DASH_ARRAY = 283;
 const HALFWAY_THRESHOLD = TIME_LIMIT / 2;
 const FULL_THRESHOLD = TIME_LIMIT / 10;
@@ -150,6 +150,8 @@ document.getElementById("app").innerHTML = `
   <button id="button" class="button" onclick="main();">Open</button>
 </div>
 `;
+
+// startTimer();
 
 function onTimesUp() {
   clearInterval(timerInterval);

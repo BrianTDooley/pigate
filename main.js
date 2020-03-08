@@ -11,10 +11,10 @@
     zapper.writeSync(1); // Turn ZAPPER on 
     sleep(4000);
     zapper.writeSync(0); // Turn ZAPPER off
-    res.sendFile('./index.htm' , { root : __dirname});
- });
+    res.sendFile('./index.htm' , { root : __dirname}); 
+});
 
- /* serves zapper page */
+ 
  app.get("/ping", function(req, res) {
     console.log(new Date(), 'i have been pinged');
     ping.writeSync(1); // Turn ping on 
@@ -24,7 +24,7 @@
  });
 
  app.get("/gate", function(req, res) {
-    console.log(new Date(), 'front end requested');
+    console.log(new Date(), 'i have been gated');
     res.sendFile('./gate.html' , { root : __dirname});
  });
 
