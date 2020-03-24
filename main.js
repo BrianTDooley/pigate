@@ -6,12 +6,14 @@
  var ping = new Gpio2(26, 'out'); //use GPIO pin 26, and specify that it is outp$
 
 /* CORS handling */
+/*
  app.use(function(req, res, next) {
+  console.log(new Date(), 'Handling CORS');
   res.header("Access-Control-Allow-Origin", "*");
-  // or res.header("Access-Control-Allow-Origin", "localhost");
   res.header("Access-Control-Allow-Headers", "*");
   next();
  });
+*/
 
  /* serves zapper page */
  app.get("/zapper", function(req, res) {
