@@ -21,7 +21,7 @@
     zapper.writeSync(1); // Turn ZAPPER on 
     sleep(4000);
     zapper.writeSync(0); // Turn ZAPPER off
-    res.sendFile('./index.htm' , { root : __dirname}); 
+    res.sendFile('./index.html' , { root : __dirname}); 
 });
 
  
